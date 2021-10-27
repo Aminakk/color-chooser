@@ -1,0 +1,12 @@
+<div>
+  <button (click)="showColorDropdown()" class="color-chooser-button">
+    <div class="selected-color" [ngStyle]="{'background-color': selectedColor}"></div>
+  </button>
+  <div class="wrapper" *ngIf="showDropdown">
+    <label *ngFor="let color of colorsArray" class="color-item" [title]="color.label"
+           [ngStyle]="{'background-color': color.value}">
+      <input type="radio" name="color-chooser-radio" value="{{color.value}}" style="display: none;"
+             (change)="selectChangeHandler($event)">
+    </label>
+  </div>
+</div>

@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-color-chooser": [
+        "dist/ngx-color-chooser/ngx-color-chooser",
+        "dist/ngx-color-chooser"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

@@ -25,3 +25,11 @@ and in your modules declaration
         ],
         ...
     })
+
+and in your html use
+
+    <color-chooser></color-chooser>
+
+To use in reactive form add formControlName
+
+    <color-chooser formControlName="colorCode"></color-chooser>
